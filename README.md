@@ -14,7 +14,7 @@
 ![TIP](./Images/model.jpg)
 <p align="center">Overall framework of STiL. STiL encodes image-tabular data using $\phi$, decomposes modality-shared and -specific information through DCC $\psi$ (a), and outputs predictions via multimodal and unimodal classifiers $f$. STiL generates pseudo-labels for unlabeled data using CGPL (b) and refines them with prototype similarity scores in PGLS (c). (d) Training pathways for labeled and unlabeled data.</p>
 
-This is an official PyTorch implementation for [STiL: Semi-supervised Tabular-Image Learning for Comprehensive Task-Relevant Information Exploration in Multimodal Classification][1]. We built the code based on [siyi-wind/TIP](https://github.com/siyi-wind/TIP). 
+This is an official PyTorch implementation for [STiL: Semi-supervised Tabular-Image Learning for Comprehensive Task-Relevant Information Exploration in Multimodal Classification][1]. We built the code based on the code of our prior ECCV 2024 paper [siyi-wind/TIP](https://github.com/siyi-wind/TIP). 
 
 We also include plenty of comparing models in this repository: [SimMatch](http://openaccess.thecvf.com/content/CVPR2022/html/Zheng_SimMatch_Semi-Supervised_Learning_With_Similarity_Matching_CVPR_2022_paper.html), Multimodal SimMatch, [CoMatch](http://openaccess.thecvf.com/content/ICCV2021/html/Li_CoMatch_Semi-Supervised_Learning_With_Contrastive_Graph_Regularization_ICCV_2021_paper.html), Multimodal CoMatch, [FreeMatch](https://arxiv.org/abs/2205.07246), Multimodal FreeMatch, [MMatch](https://ieeexplore.ieee.org/abstract/document/9733884), and [Co-training](https://dl.acm.org/doi/abs/10.1145/279943.279962) (Please go to the paper to find the detailed information of these models).
 
@@ -24,6 +24,8 @@ Share us a :star: if this repository does help.
 
 ## Updates
 [**12/03/2025**] The arXiv paper and the code are released. 
+
+[**21/02/2026**] We have a new paper accepted at ICLR 2026, which proposes an inference-time dynamic modality selection framework (DyMo) for various missing data scenarios (whole-modality and partial-modality missingness) across multiple modalities (e.g., image, table, and text). Please check [this repository](https://github.com/siyi-wind/DyMo) for details. 
 
 ## Contents
 - [Requirements](#requirements)
@@ -42,7 +44,7 @@ conda env create --file environment.yaml
 conda activate stil
 ```
 
-## Data
+## Data Preparation
 Download DVM data from [here][2]
 
 Apply for the UKBB data [here][3]
@@ -50,7 +52,7 @@ Apply for the UKBB data [here][3]
 ### Preparation
 We conduct the same data preprocessing process as [siyi-wind/TIP](https://github.com/siyi-wind/TIP).
 
-## Training
+## Training & Testing
 
 ### Training
 ```sh
@@ -86,7 +88,6 @@ If you use this code in your research, please consider citing:
 
 ## Acknowledgements
 We would like to thank the following repositories for their great works:
-* [TIP](https://github.com/siyi-wind/TIP)
 * [PIBD](https://github.com/zylbuaa/PIBD)
 * [MMCL](https://github.com/paulhager/MMCL-Tabular-Imaging)
 * [BLIP](https://github.com/salesforce/BLIP)
