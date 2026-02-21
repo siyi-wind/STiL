@@ -25,7 +25,18 @@ Share us a :star: if this repository does help.
 ## Updates
 [**12/03/2025**] The arXiv paper and the code are released. 
 
-[**21/02/2026**] We have a new paper accepted at ICLR 2026, which proposes an inference-time dynamic modality selection framework (DyMo) for various missing data scenarios (whole-modality and partial-modality missingness) across multiple modalities (e.g., image, table, and text). Please check [this repository](https://github.com/siyi-wind/DyMo) for details. 
+[**21/02/2026**] We have a new paper accepted at ICLR 2026, which proposes an inference-time dynamic modality selection framework (DyMo) for various missing data scenarios across multiple modalities. Please check [this repository](https://github.com/siyi-wind/DyMo) for details. 
+
+## Our Multimodal Learning Research Line
+This repository is part of our research line on multimodal learning.
+
+- **TIP (ECCV2024)**: An image-tabular pre-training framework for intra-modality missingness ([siyi-wind/TIP](https://github.com/siyi-wind/TIP))
+
+- **STiL (CVPR 2025, this work)**: A semi-supervised image-tabular framework for modality heterogeneity and limited labeled data ([siyi-wind/STiL](https://github.com/siyi-wind/STiL))
+
+- **DyMo (ICLR 2026)**: An inference-time dynamic modality selection framework for missing modality ([siyi-wind/DyMo](https://github.com/siyi-wind/DyMo))
+
+
 
 ## Contents
 - [Requirements](#requirements)
